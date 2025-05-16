@@ -1,46 +1,38 @@
-````markdown
-# Weather Data Processing Pipeline
 
-This project is a simple data pipeline to ingest, clean, transform, and analyze weather data using Python.
+---
 
-## Features
+Weather Data Processing Pipeline
 
-- Load data from `weather_data.csv`
-- Clean and format the data (handle missing values, standardize date format)
-- Add a new column: temperature in Fahrenheit
-- Filter out invalid entries
-- Save cleaned data and generate a report
-- (Bonus) Create a bar chart of average temperature per city
+This project builds a simple Python pipeline to ingest, clean, transform, and analyze weather data from a CSV file.
 
-## How to Run
+Features:
 
-### 1. Set up environment
+* Load and clean data from "weather\_data.csv"
+* Standardize date formats and handle missing values
+* Add temperature in Fahrenheit
+* Filter out invalid weather conditions
+* Save cleaned data and generate summary reports
+* (Bonus) Bar chart of average temperature per city
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-````
+Quick Start:
+Run these commands to set up and execute the project:
 
-### 2. Run the script
-
-```bash
-python app.py
 ```
-
-Or use the Jupyter notebook:
-
-```bash
+python -m venv venv
+source venv/bin/activate   (On Windows: venv\Scripts\activate)
+pip install -r requirements.txt
+python app.py
+# Or run the notebook:
 jupyter notebook take_home.ipynb
 ```
 
-## Output
+Outputs:
 
-* `outputs/transformed_weather_data.csv`: Cleaned data
-* `outputs/top5_temperatures.txt`: Top 5 highest temperatures
-* `outputs/average_temperature_per_city.png`: Bar chart of average temperature
+* outputs/transformed\_weather\_data.csv — cleaned data
+* outputs/top5\_temperatures.txt — top 5 highest temperatures
+* outputs/average\_temperature\_per\_city.png — bar chart visualization
 
-## Dependencies
+Dependencies:
 
 * pandas
 * numpy
@@ -50,14 +42,15 @@ jupyter notebook take_home.ipynb
 
 Install with:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
-## Notes
+Notes:
 
-* Dates are cleaned and unified to `YYYY-MM-DD` format
-* Missing values are filled with the column mean
-* “Unknown” weather conditions are filtered out
+* Dates converted to YYYY-MM-DD format
+* Missing numeric values replaced with city averages
+* Rows with “Unknown” weather conditions are excluded
 
-```
+---
+

@@ -1,0 +1,6 @@
+               date     city  temperature_celsius  humidity_percent  wind_speed_kph weather_condition  temperature_fahrenheit
+2023-01-17 00:00:00    Tokyo                 19.3         43.000000       14.352727             RAINY                   66.74
+2023-01-27 00:00:00   London                 18.1         59.000000        1.000000             Snowy                   64.58
+2023-01-22 00:00:00 New York                 13.4         58.978723       14.352727             Snowy                   56.12
+2023-01-25 00:00:00 New York                 12.9         58.978723        5.700000             Sunny                   55.22
+2023-01-15 00:00:00 New York                 12.2         58.978723       16.500000             RAINY                   53.96
