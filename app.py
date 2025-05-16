@@ -24,6 +24,7 @@ df = df[df['weather_condition'].str.lower() != 'unknown']
 
 
 # Data output
+# Here we're making sure the outputs folder exists
 os.makedirs('outputs', exist_ok=True)
 df.to_csv('outputs/transformed_weather_data.csv', index=False)
 
@@ -45,6 +46,4 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 
 plt.savefig('outputs/average_temperature_per_city.png')
-
-# Show the plot (optional)
 plt.show()
